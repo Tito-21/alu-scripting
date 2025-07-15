@@ -27,7 +27,8 @@ def number_of_subscribers(subreddit):
                        allow_redirects=False)
 
     # Checks if the subreddit is invalid
-    if res.status_code in repr([302, 404]):
+    if res.status_code in [302, 404]:
+
         return 0
 
     # Returns the total subscribers of the subreddit
