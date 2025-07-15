@@ -28,7 +28,7 @@ def top_ten(subreddit):
                        params=payload, allow_redirects=False)
 
     # Checks if the subreddit is invalid
-    if res.status_code in [302, 404]:
+    if res.status_code !=200
         print('None')
     else:
         res_json = res.json()
